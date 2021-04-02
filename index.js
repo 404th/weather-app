@@ -16,7 +16,7 @@ app.use( express.json() )
 app.use( express.static( path.join( __dirname, 'public' ) ) )
 app.use( layout )
 
-app.get( '/', (req, res) => {}  )
+app.get( '/', require("./routes/index")  )
 
 // Listening Server
 app.listen( SERVER_PORT, () => console.info(`Server is established on PORT:${ SERVER_PORT }`) )

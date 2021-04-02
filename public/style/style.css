@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* .container {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .container .container_cover {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .container .container_cover .container_cover_weather {
+  width: 500px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header {
+  min-height: 25%;
+  width: 100%;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 30px;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_input {
+  width: 100%;
+  height: 45%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Yatra One", cursive;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_input::-webkit-input-placeholder {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-family: "Yatra One", cursive;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_input:-ms-input-placeholder {
+  box-sizing: border-box;
+  padding: 10px;
+  color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-family: "Yatra One", cursive;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_input::-ms-input-placeholder {
+  box-sizing: border-box;
+  padding: 10px;
+  color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-family: "Yatra One", cursive;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_input::placeholder {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-family: "Yatra One", cursive;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_button {
+  width: 100%;
+  height: 40%;
+  outline: none;
+  border: none;
+  border-radius: 7px;
+  background-color: #7eca9c;
+  color: #fff;
+  text-align: center;
+  font-family: monospace;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 27px;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_button:hover {
+  background-color: #ccffbd;
+  color: #7eca9c;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_header .container_cover_weather_header_button:active {
+  color: #40394a;
+  background-color: #fff;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main {
+  min-height: 75%;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_icon_temp {
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_icon_temp .weather_icon_temp__icon {
+  width: 70px;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_icon_temp .weather_icon_temp__temperature {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Yatra One", cursive;
+  color: #1c1427;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_wind_speed {
+  height: 25%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_wind_speed .weather_wind_speed__speed {
+  font-family: "Yatra One", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  color: #1c141c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_main .weather_description {
+  height: 50%;
+  width: 100%;
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_footer {
+  min-height: 10%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .container .container_cover .container_cover_weather .container_cover_weather_footer .container_cover_weather_footer_span {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.4);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */

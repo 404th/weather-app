@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+
+  .container {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .container_cover {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container_cover_weather {
+        width: 500px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+
+        .container_cover_weather_header {
+          min-height: 25%;
+          width: 100%;
+          border-radius: 15px;
+          box-sizing: border-box;
+          padding: 0 30px;
+
+          .container_cover_weather_header_input {
+            width: 100%;
+            height: 45%;
+            box-sizing: border-box;
+            border: 0;
+            outline: none;
+            box-sizing: border-box;
+            padding: 10px;
+            text-align: center;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 27px;
+            font-weight: 400;
+            font-family: "Yatra One", cursive;
+
+            &::placeholder {
+              box-sizing: border-box;
+              padding: 10px;
+              color: #c1c1c1;
+              font-size: 27px;
+              font-weight: 400;
+              font-family: "Poppins";
+              font-family: "Yatra One", cursive;
+            }
+          }
+
+          .container_cover_weather_header_button {
+            width: 100%;
+            height: 40%;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            background-color: #7eca9c;
+            color: #fff;
+            text-align: center;
+            font-family: monospace;
+            font-weight: 700;
+            transition: 0.3s;
+            user-select: none;
+            font-size: 27px;
+
+            &:hover {
+              background-color: #ccffbd;
+              color: #7eca9c;
+            }
+
+            &:active {
+              color: #40394a;
+              background-color: #fff;
+            }
+          }
+        }
+        .container_cover_weather_main {
+          min-height: 75%;
+          width: 100%;
+          box-sizing: border-box;
+          box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 0px 0px 16px -5px rgba(0, 0, 0, 0.75);
+          padding: 15px;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+
+          .weather_icon_temp {
+            height: 25%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+            justify-content: center;
+
+            .weather_icon_temp__icon {
+              width: 70px;
+            }
+
+            .weather_icon_temp__temperature {
+              font-size: 30px;
+              font-weight: 400;
+              font-family: "Yatra One", cursive;
+              color: #1c1427;
+
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .weather_wind_speed {
+            height: 25%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .weather_wind_speed__speed {
+              font-family: "Yatra One", cursive;
+              font-weight: 400;
+              font-size: 30px;
+              color: #1c141c;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+          .weather_description {
+            height: 50%;
+            width: 100%;
+            font-family: "Inconsolata", monospace;
+            font-size: 18px;
+          }
+        }
+        .container_cover_weather_footer {
+          min-height: 10%;
+          width: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .container_cover_weather_footer_span {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
