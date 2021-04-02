@@ -3,7 +3,7 @@ document.getElementById("show").addEventListener( 'click', async () => {
   let location = document.getElementById("location_input").value
 
   try {
-    let data = await fetch( `/city?${ location }` )
+    let data = await fetch( `/`, { method:"POST", body:{ location } } )
     if ( data ) {
       console.log(data)
     } else {
