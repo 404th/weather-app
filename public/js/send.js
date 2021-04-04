@@ -1,14 +1,15 @@
 
-document.getElementById("show").addEventListener( 'click', async () => {
-  let location = document.getElementById("location_input").value
+document.getElementById("show").addEventListener( 'click', async function() {
+  let city = document.getElementById("location_input").value
 
   try {
-    let data = await fetch( `/`, { method:"POST", body:{ location } } )
-    if ( data ) {
-      console.log(data)
-    } else {
-      throw new Error
-    }
+    await fetch( `http://localhost:8181/`, {
+      method:"POST",
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({
+        city
+      })
+    } )
   } catch (err) {
     console.error( err )
   }
